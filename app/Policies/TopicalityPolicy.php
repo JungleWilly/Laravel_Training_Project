@@ -18,6 +18,7 @@ class TopicalityPolicy
      */
     public function viewAny(User $user)
     {
+        // compare if the user id is the same as the topicality user id
         return $user->id === $topicality->user_id;
         
     }
@@ -31,6 +32,7 @@ class TopicalityPolicy
      */
     public function view(User $user, Topicality $topicality)
     {
+        
         return $user->id === $topicality->user_id;
 
     }
@@ -41,9 +43,10 @@ class TopicalityPolicy
      * @param  \App\User  $user
      * @return mixed
      */
-    public function create(User $user, int $topicality_user_id)
+    public function create(User $user)
     {
-        return $user->id === $topicality_user_id;
+        
+        
     }
 
     /**

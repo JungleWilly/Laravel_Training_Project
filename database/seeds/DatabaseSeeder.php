@@ -14,6 +14,8 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
 
+        // run the different factory to fill out the DB
+
         $user= factory(User::class)->create();
         
         

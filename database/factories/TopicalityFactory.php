@@ -7,6 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(Topicality::class, function (Faker $faker) {
     
+    // create fake data to fill the DB
 
     return [
         'title' => $faker->sentence(6, true),
